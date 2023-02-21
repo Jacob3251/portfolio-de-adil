@@ -1,0 +1,26 @@
+.menuBar {
+  display: block;
+  /* background-color: red; */
+}
+.sideMenuIcon {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .menuBar {
+    display: none;
+  }
+
+  .sideMenuIcon {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .menuBar {
+    display: none;
+  }
+
+  .sideMenuIcon {
+    display: block;
+  }
+}
