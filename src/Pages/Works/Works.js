@@ -36,7 +36,7 @@ const Works = () => {
       <div className="flex items-center justify-center my-5  space-x-4">
         {/* <h6 className=" text-lg text-white">MY</h6> */}
         <h6 className="text-white font-roboto text-3xl tracking-widest glitchy">
-          MY WORK
+          &lt; MY WORK / &gt;
         </h6>
       </div>
       <div className="flex w-full justify-center items-center">

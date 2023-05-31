@@ -6,7 +6,7 @@ const Blog = () => {
   const [expand, setExpand] = useState(false);
   // const [height, setHeight] = useState("0");
   return (
-    <div className="bg-white p-5 rounded-md">
+    <div className="bg-white p-5 rounded-md shadow-lg duration-500 shadow-transparent hover:shadow-purple-800">
       <div className="flex space-x-5 items-start">
         {/* img container below */}
         <div className="w-[120px] rounded-md bg-blue-500 overflow-hidden">

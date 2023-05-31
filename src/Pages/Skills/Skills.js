@@ -10,7 +10,9 @@ const Skills = () => {
       </h3> */}
       <div className="flex items-center justify-center my-5  space-x-4">
         {/* <h6 className=" text-lg text-white"></h6> */}
-        <h6 className="text-white font-roboto text-3xl glitchy">MY SKILLS</h6>
+        <h6 className="text-white font-roboto text-3xl glitchy">
+          &lt; MY SKILLS / &gt;
+        </h6>
         {/* <hr className="divider text-white bg-white" /> */}
       </div>
       <div className="flex w-full justify-center items-center">

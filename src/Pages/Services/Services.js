@@ -8,10 +8,11 @@ const Services = () => {
       data-aos="fade-up"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
+      id="services"
     >
       <div>
         {/* <h3
-          id="services"
+          // 
           className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white"
         >
           WHAT I DO
@@ -19,7 +20,7 @@ const Services = () => {
         <div className="flex items-center justify-center my-5 space-x-4">
           {/* <h6 className=" text-lg text-white">MY</h6> */}
           <h6 className="text-white font-roboto text-3xl glitchy">
-            MY SERVICES
+            &lt; MY SERVICES / &gt;
           </h6>
         </div>
         <div className="flex w-full justify-center items-center">
