@@ -19,16 +19,16 @@ const InfoPart = ({ classes }) => {
   return (
     <div className={`${classes}`}>
       <div>
-        <h6 className="text-sm text-start">
+        <h6 className="text-xl md:text-sm text-center md:text-start">
           <span className="text-white">HELLO, </span>
           <span className="text-white">MY NAME IS</span>
         </h6>
-        <h3 className="text-4xl font-raleway font-extrabold text-white mb-10">
+        <h3 className="text-4xl font-raleway font-extrabold text-white md:mb-10">
           <span>Md. Nayeem Hasan</span>{" "}
           <span className="text-[#F0E68C]">Adil</span>
         </h3>
       </div>
-      <div className="h-[60px] overflow-hidden mb-2">
+      <div className="h-[60px] overflow-hidden md:mb-2">
         {count ? (
           <Typist
             cursor={{
@@ -40,7 +40,7 @@ const InfoPart = ({ classes }) => {
           >
             <p className="text-white">
               I am a{" "}
-              <span className="font-pacifico text-xl text-[#F0E68C]">
+              <span className="font-roboto text-xl text-[#F0E68C]">
                 Web Developer
               </span>
             </p>
@@ -52,25 +52,25 @@ const InfoPart = ({ classes }) => {
         )}
       </div>
 
-      <p className="text-white mb-10">
+      <p className="text-white mb-2 md:mb-10">
         I am from Bangladesh a country located in South-East Asia. I have good
         understanding in web design, also I have some knowledge about backend
         thats required for building a nice websites
       </p>
-      <div className="flex space-x-5 text-lg text-white  justify-start py-2 ">
+      <div className="flex justify-center md:space-x-5 text-lg text-white  md:justify-start py-2">
         <FaFacebookF className="hover:bg-white hover:text-black rounded-full h-8 p-1 w-8 duration-200"></FaFacebookF>
         <FaGithub className="hover:bg-white hover:text-black rounded-full h-8 p-1 w-8 duration-200"></FaGithub>
         <FaLinkedinIn className="hover:bg-white hover:text-black rounded-full h-8 p-1 w-8 duration-200"></FaLinkedinIn>
         <FaWhatsapp className="hover:bg-white hover:text-black rounded-full h-8 p-1 w-8 duration-200"></FaWhatsapp>
         <FiMail className="hover:bg-white hover:text-black rounded-full h-8 p-1 w-8 duration-200"></FiMail>
       </div>
-      <div className="flex space-x-4 justify-center mt-2 mb-10">
-        <button className="bg-white hover:scale-105 duration-200 px-10 py-2 font-pacifico text-black text-xl font-extrabold   rounded-3xl ">
+      <div className="flex space-x-4 justify-center mt-5 mb-10">
+        <button className="bg-white hover:scale-105 duration-200 px-10 py-2 font-roboto text-black text-xl font-extrabold   rounded-3xl ">
           Download CV
         </button>
         <HashLink
           smooth
-          className="bg-white hover:scale-105 px-10 py-2 font-pacifico text-black text-xl font-extrabold   rounded-3xl "
+          className="bg-white hover:scale-105 px-10 py-2 font-roboto text-black text-xl font-extrabold   rounded-3xl "
           to="/#skills"
         >
           My Skills

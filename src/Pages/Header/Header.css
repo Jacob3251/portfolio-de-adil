@@ -5,6 +5,33 @@
 .sideMenuIcon {
   display: none;
 }
+.expandable {
+  min-height: 0;
+  color: white;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 0ms ease-in;
+  transition-delay: 1000ms;
+}
+
+.wrapper.open {
+  grid-template-rows: 1fr;
+}
+.wrapperClose {
+  display: grid;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  transition: grid-template-rows 100ms ease-out;
+  transition-delay: 0ms;
+}
+
+.wrapperClose.close {
+  grid-template-rows: 0fr;
+}
+
 @media only screen and (max-width: 576px) {
   .menuBar {
     display: none;

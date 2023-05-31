@@ -1,0 +1,14 @@
+.expandable {
+  min-height: 0;
+  color: red;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 500ms;
+}
+
+.wrapper.open {
+  grid-template-rows: 1fr;
+}

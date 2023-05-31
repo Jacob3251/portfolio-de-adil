@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Work from "./Work";
 import Typist from "react-typist";
+import Carousel from "../Shared/Carousel";
 const Works = () => {
   const [showTyper, setShowTyper] = useState(true);
   const works = [
@@ -29,13 +30,30 @@ const Works = () => {
 
   return (
     <div className="w-[80%] pt-32 mx-auto py-2 " data-aos="fade-up" id="works">
-      <h3 className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white">
+      {/* <h3 className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white">
         PORTFOLIO
-      </h3>
+      </h3> */}
       <div className="flex items-center justify-center my-5  space-x-4">
-        <h6 className=" text-lg text-white">MY</h6>
-        <h6 className="text-white font-pacifico text-3xl">Cases</h6>
+        {/* <h6 className=" text-lg text-white">MY</h6> */}
+        <h6 className="text-white font-roboto text-3xl tracking-widest glitchy">
+          MY WORK
+        </h6>
       </div>
+      <div className="flex w-full justify-center items-center">
+        <hr className="my-2 w-full" />
+        <span className="mx-2"></span>
+        <hr className="my-2 w-full" />
+        <hr className="my-2 w-full" />
+        <span className="mx-2"></span>
+        <hr className="my-2 w-full" />
+        <hr className="my-2 w-full" />
+        <span className="mx-2"></span>
+        <hr className="my-2 w-full" />
+        <hr className="my-2 w-full" />
+        <span className="mx-2"></span>
+        <hr className="my-2 w-full" />
+      </div>
+      {/* <Carousel></Carousel> */}
       {/* Individual projects below */}
       {showTyper ? (
         <div className="w-full text-center my-40">

@@ -10,17 +10,33 @@ const Services = () => {
       data-aos-duration="1000"
     >
       <div>
-        <h3
+        {/* <h3
           id="services"
           className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white"
         >
           WHAT I DO
-        </h3>
+        </h3> */}
         <div className="flex items-center justify-center my-5 space-x-4">
-          <h6 className=" text-lg text-white">MY</h6>
-          <h6 className="text-white font-pacifico text-3xl">SERVICES</h6>
+          {/* <h6 className=" text-lg text-white">MY</h6> */}
+          <h6 className="text-white font-roboto text-3xl glitchy">
+            MY SERVICES
+          </h6>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-20">
+        <div className="flex w-full justify-center items-center">
+          <hr className="my-2 w-full" />
+          <span className="mx-2"></span>
+          <hr className="my-2 w-full" />
+          <hr className="my-2 w-full" />
+          <span className="mx-2"></span>
+          <hr className="my-2 w-full" />
+          <hr className="my-2 w-full" />
+          <span className="mx-2"></span>
+          <hr className="my-2 w-full" />
+          <hr className="my-2 w-full" />
+          <span className="mx-2"></span>
+          <hr className="my-2 w-full" />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] mt-20">
           <Service
             category={"WEB DEVELOPMENT"}
             jobTitle={"Single Page Application"}
@@ -33,6 +49,27 @@ const Services = () => {
             jobTitle={"Full Stack Website"}
             description={
               "A Full Stack Website is a website that uses all layers of web development stack (client-side, server-side and database) to deliver the complete functionality to the user."
+            }
+          ></Service>
+          <Service
+            category={"WEB DEVELOPMENT"}
+            jobTitle={"Error Fixing"}
+            description={
+              "Error fixing in web development refers to the process of identifying and resolving errors in the code, configuration, or environment of a website or web application."
+            }
+          ></Service>
+          <Service
+            category={"WEB DEVELOPMENT"}
+            jobTitle={"Error Fixing"}
+            description={
+              "Error fixing in web development refers to the process of identifying and resolving errors in the code, configuration, or environment of a website or web application."
+            }
+          ></Service>
+          <Service
+            category={"WEB DEVELOPMENT"}
+            jobTitle={"Error Fixing"}
+            description={
+              "Error fixing in web development refers to the process of identifying and resolving errors in the code, configuration, or environment of a website or web application."
             }
           ></Service>
           <Service

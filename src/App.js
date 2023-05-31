@@ -7,6 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 import Layout from "./Pages/Layout/Layout";
 import Blogs from "./Pages/Blogs/Blogs";
 import BlogLayout from "./Pages/Layout/BlogLayout";
+import Footer from "./Pages/Footer/Footer";
 function App() {
   const router = createBrowserRouter([
     {
