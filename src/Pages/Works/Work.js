@@ -12,8 +12,7 @@ const Work = ({ title, category, desciption, id, diff }) => {
   const [repoShow, setRepoShow] = useState(false);
   return (
     <div
-      className="bg-[#1a1c2c]  rounded-2xl hover:scale-105 duration-200"
-      title={title}
+      className="bg-[#1a1c2c]  rounded-2xl  duration-200 overflow-hidden"
       data-aos="fade-up"
       data-aos-easing="ease-in-out"
       data-aos-duration="800"
@@ -23,26 +22,32 @@ const Work = ({ title, category, desciption, id, diff }) => {
       {/* <div className="overflow-hidden ">
         <img className=" hover:scale-105 duration-200" src={logo} alt="" />
       </div> */}
-      <div className={`${repoShow === false ? "wrapper" : "wrapper open"}`}>
+      <div className={`${repoShow === false ? "wrapper" : "wrapper open"} `}>
         <div className="expandable ">
           <div
-            className="px-5 mt-36"
-            data-aos="flip-right"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="500"
-            data-aos-duration="1000"
+            className="px-5 my-20 "
+            // data-aos="flip-right"
+            // data-aos-easing="ease-in-back"
+            // data-aos-delay="500"
+            // data-aos-duration="1000"
           >
             <h3 className="text-center font-raleway text-2xl my-5 text-white">
               MotoPeddler
             </h3>
             <div className="space-x-5 flex justify-center items-center">
-              <button className="px-3 py-1 bg-white text-black hover:text-white hover:bg-transparent border-2 border-transparent hover:border-white duration-300 flex justify-between items-center text-lg">
-                <FaGithub className="mr-2" />
-                Github Repo
+              <button
+                title={`View Github Repository`}
+                className="px-3 py-3 bg-white text-black hover:text-white hover:bg-transparent border-2 border-transparent hover:border-white duration-300 flex justify-between items-center text-[34px] rounded-full 2xl:rounded-none 2xl:text-lg"
+              >
+                <FaGithub className="2xl:mr-2" />
+                <span className="hidden 2xl:block">Github Repo</span>
               </button>
-              <button className="px-3 py-1 bg-white text-[#296e6b] hover:text-white  hover:bg-transparent border-2 border-transparent hover:border-white duration-300 flex justify-between items-center text-lg">
-                <FaGlobeAmericas className="mr-2" />
-                Live Site
+              <button
+                title={`View Live Website ${title}`}
+                className="px-3 py-3 bg-white text-[#296e6b] hover:text-white  hover:bg-transparent border-2 border-transparent hover:border-white duration-300 flex justify-between items-center text-[34px] rounded-full 2xl:rounded-none 2xl:text-lg"
+              >
+                <FaGlobeAmericas className="2xl:mr-2" />
+                <span className="hidden 2xl:block">Live Site</span>
               </button>
             </div>
           </div>

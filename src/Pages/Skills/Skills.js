@@ -186,7 +186,7 @@ const Skills = () => {
           </div>
         </div>
       </div> */}
-      <div className="grid grid-cols-3 gap-[50px] mx-auto w-[95%] mt-[80px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] mx-auto w-[95%] mt-[80px]">
         <Skill name="HTML" skillPoint={85}></Skill>
         <Skill name="CSS" skillPoint={75}></Skill>
         <Skill name="JAVASCRIPT" skillPoint={90}></Skill>

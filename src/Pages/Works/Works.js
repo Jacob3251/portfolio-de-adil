@@ -62,7 +62,7 @@ const Works = () => {
           </Typist>
         </div>
       ) : (
-        <div className="mt-10 mb-40 grid grid-cols-1 gap-10 w-full p-16  lg:grid-cols-2  xl:grid-cols-3 place-content-center">
+        <div className=" mt-10 mb-40 grid grid-cols-1 gap-10 w-full p-16  lg:grid-cols-2  xl:grid-cols-3 place-items-center place-content-center">
           {works.map((work) => (
             <Work
               id={work.id}

@@ -17,7 +17,7 @@ const Skill = ({ name, skillPoint }) => {
     <div className=" w-[60%] mx-auto">
       <div
         onMouseEnter={valIncreaser(skillPoint)}
-        className="flex justify-between  items-center space-x-5"
+        className="flex flex-col 3xl:flex-row justify-center 3xl:justify-between  items-center space-y-5 3xl:space-y-0 3xl:space-x-5"
       >
         <h3 className="text-2xl font-semibold">{name}</h3>
 
