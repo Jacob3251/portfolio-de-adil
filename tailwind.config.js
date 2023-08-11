@@ -7,6 +7,7 @@ module.exports = {
         pacifico: ["Pacifico", "cursive"],
         raleway: ["Raleway", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        wetpaint: ["Rubik Wet Paint", "cursive"],
       },
     },
   },

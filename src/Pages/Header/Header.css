@@ -20,7 +20,7 @@
 .wrapper.open {
   grid-template-rows: 1fr;
 }
-.wrapperClose {
+/* .wrapperClose {
   display: grid;
   grid-template-rows: 1fr;
   overflow: hidden;
@@ -30,7 +30,7 @@
 
 .wrapperClose.close {
   grid-template-rows: 0fr;
-}
+} */
 
 @media only screen and (max-width: 576px) {
   .menuBar {

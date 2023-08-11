@@ -9,10 +9,10 @@ const Header = () => {
   return (
     <div className="sticky top-[-2px] z-50">
       <nav className=" bg-[#1a1c2c] ">
-        <div className="flex w-[80%] py-5 lg:py-0 mx-auto justify-between items-center ">
+        <div className="flex w-[90%] py-5 lg:py-0 mx-auto justify-between items-center ">
           <div>
-            <h3 className="text-white  text-3xl font-semibold glitchy tracking-tight">
-              &lt; Developer Adil / &gt;
+            <h3 className="text-purple-700   text-3xl font-wetpaint font-normal tracking-widest">
+              &lt;Dev Adil&gt;
               {/* Protfolio{" "}
               <span className="font-raleway">of </span>Adil */}
             </h3>
@@ -30,36 +30,36 @@ const Header = () => {
           )}
           <div className="menuBar">
             <ul className="flex flex-col md:flex-row space-x-2 bg-[#1a1c2c] justify-center py-5 ">
-              <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
+              <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
                 <HashLink smooth to="/#home">
                   Home
                 </HashLink>
               </li>
-              <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
+              <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
                 <HashLink smooth to="/#services">
                   Services
                 </HashLink>
               </li>
-              <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
+              <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
                 <HashLink smooth to="/#skills">
                   Skills
                 </HashLink>
               </li>
-              <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
+              <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
                 <HashLink smooth to="/#works">
                   Works
                 </HashLink>
               </li>
-              <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
+              <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
                 <HashLink smooth to="/#resumes">
                   Resume
                 </HashLink>
               </li>
 
-              <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
+              <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
                 <Link to="blogs">Blogs</Link>
               </li>
-              <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
+              <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
                 <HashLink smooth to="/#contact">
                   Contact
                 </HashLink>

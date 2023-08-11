@@ -22,14 +22,14 @@ function App() {
 
   return (
     <div>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={8}
         outerSize={12}
         color="240, 230, 140"
         outerAlpha={0.6}
         innerScale={5}
         outerScale={5}
-      />
+      /> */}
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

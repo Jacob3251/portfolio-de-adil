@@ -1,0 +1,56 @@
+/* CustomCarousel.css */
+.carousel {
+  /* Your styles for the carousel container */
+}
+
+.carousel .slide {
+  /* Your styles for individual slides */
+}
+
+.carousel .control-arrow {
+  /* Your styles for arrow buttons */
+}
+
+.carousel .thumb {
+  /* Your styles for thumbnail navigation */
+  display: none;
+}
+.shieldContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 50px;
+}
+.shieldItem {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 20px;
+  width: 120px;
+}
+
+.tab {
+  margin-bottom: 10px;
+  position: relative; /* Required for positioning the pseudo-element */
+}
+
+/* Apply the sliding border effect using ::before pseudo-element */
+.tab::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Position the pseudo-element at the bottom of the list item */
+  left: 0; /* Start the border from the left edge */
+  width: 0; /* Initially, the border width is 0 */
+  height: 2px;
+  background-color: white;
+  transition: width 0.5s ease; /* Transition the width property for sliding effect */
+}
+
+/* Apply the sliding border when the tab is active */
+.active::before {
+  width: 100%; /* Expand the width to 100% for the sliding effect */
+}

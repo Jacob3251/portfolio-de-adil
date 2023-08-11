@@ -10,13 +10,18 @@ import Footer from "../Footer/Footer";
 
 const Layout = () => {
   return (
-    <div className="bg-[#171927] bg-opacity-80">
-      <ParticleBackground></ParticleBackground>
+    <div className="bg-[#171927] w-full">
+      {/* <div className="hidden">
+        <ParticleBackground></ParticleBackground>
+      </div> */}
       <Header></Header>
-      <Home className=""></Home>
-      <Services className=""></Services>
-      <Skills className=""></Skills>
-      <Works className=""></Works>
+      <div className="w-full  md:w-[90%] lg:w-[85%]  mx-auto">
+        <Home className=""></Home>
+        <Services className=""></Services>
+        <Skills className=""></Skills>
+        <Works className=""></Works>
+      </div>
+
       <Footer></Footer>
     </div>
   );

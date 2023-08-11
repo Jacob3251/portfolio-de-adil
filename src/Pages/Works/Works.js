@@ -26,34 +26,68 @@ const Works = () => {
       desciption:
         "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
     },
+    {
+      id: 3,
+      category: "WEB DEVELOPMENT",
+      title: "Full Stack Website",
+      desciption:
+        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+    },
+    {
+      id: 3,
+      category: "WEB DEVELOPMENT",
+      title: "Full Stack Website",
+      desciption:
+        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+    },
+    {
+      id: 3,
+      category: "WEB DEVELOPMENT",
+      title: "Full Stack Website",
+      desciption:
+        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+    },
+    {
+      id: 3,
+      category: "WEB DEVELOPMENT",
+      title: "Full Stack Website",
+      desciption:
+        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+    },
+    {
+      id: 3,
+      category: "WEB DEVELOPMENT",
+      title: "Full Stack Website",
+      desciption:
+        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+    },
   ];
 
   return (
-    <div className="w-[80%] pt-32 mx-auto py-2 " data-aos="fade-up" id="works">
+    <div className="w-full px-5 md:px-20 " data-aos="fade-up" id="works">
       {/* <h3 className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white">
         PORTFOLIO
       </h3> */}
-      <div className="flex items-center justify-center my-5  space-x-4">
+      <div className="flex items-center justify-center my-3  space-x-4">
         {/* <h6 className=" text-lg text-white">MY</h6> */}
-        <h6 className="text-white font-roboto text-3xl tracking-widest glitchy">
+        <h6 className="text-white font-bold font-roboto text-3xl ">
           &lt; MY WORK / &gt;
         </h6>
       </div>
       <div className="flex w-full justify-center items-center">
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
-        <hr className="my-2 w-full" />
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
-        <hr className="my-2 w-full" />
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
-        <hr className="my-2 w-full" />
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
       </div>
-      {/* <Carousel></Carousel> */}
       {/* Individual projects below */}
       {showTyper ? (
         <div className="w-full text-center my-40">
@@ -62,7 +96,7 @@ const Works = () => {
           </Typist>
         </div>
       ) : (
-        <div className=" mt-10 mb-40 grid grid-cols-1 gap-10 w-full p-16  lg:grid-cols-2  xl:grid-cols-3 place-items-center place-content-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] my-10">
           {works.map((work) => (
             <Work
               id={work.id}

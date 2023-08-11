@@ -6,10 +6,12 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="w-full  md:w-[80%] my-2 mx-auto flex flex-col-reverse pt-0 space-x-5 md:pt-14  md:space-y-0  px-20 md:flex-row justify-center items-start "
+      className="w-full my-0 md:my-2 mx-auto flex flex-col-reverse pt-0 md:space-x-20 space-x-0  md:pt-14  md:space-y-0  md:px-20 md:flex-row justify-center items-center md:items-start"
     >
-      <InfoPart classes={" text-center md:text-start"}></InfoPart>
-      <ImgPart classes={"z-40  my-10 md:my-0"}></ImgPart>
+      <InfoPart
+        classes={"scale-95 md:scale-100 text-center md:text-start"}
+      ></InfoPart>
+      <ImgPart classes={" z-40   my-5 md:my-0"}></ImgPart>
     </div>
   );
 };

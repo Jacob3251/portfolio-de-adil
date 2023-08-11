@@ -1,35 +1,35 @@
 import React from "react";
 import { useState } from "react";
 import Skill from "./Skill";
+import ResponsiveCarousel from "../Shared/ResponsiveCarousel";
 
 const Skills = () => {
   return (
-    <div className=" w-[80%] pt-32 mx-auto py-2" id="skills" data-aos="fade-up">
+    <div className=" w-full px-5 md:px-20  mb-40 mx-auto py-2" id="skills">
       {/* <h3 className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white">
         PROFESSIONAL SKILLS
       </h3> */}
       <div className="flex items-center justify-center my-5  space-x-4">
         {/* <h6 className=" text-lg text-white"></h6> */}
-        <h6 className="text-white font-roboto text-3xl glitchy">
+        <h6 className="text-white font-bold font-roboto text-3xl ">
           &lt; MY SKILLS / &gt;
         </h6>
         {/* <hr className="divider text-white bg-white" /> */}
       </div>
       <div className="flex w-full justify-center items-center">
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
-        <hr className="my-2 w-full" />
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
-        <hr className="my-2 w-full" />
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
-        <hr className="my-2 w-full" />
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
-        <hr className="my-2 w-full" />
+        <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
       </div>
-
       {/* Progress bar below */}
       {/* <div className="mb-20  w-full">
         <div className="mt-[100px] space-y-5">
@@ -186,6 +186,7 @@ const Skills = () => {
           </div>
         </div>
       </div> */}
+      <ResponsiveCarousel></ResponsiveCarousel>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] mx-auto w-[95%] mt-[80px]">
         <Skill name="HTML" skillPoint={85}></Skill>
         <Skill name="CSS" skillPoint={75}></Skill>
