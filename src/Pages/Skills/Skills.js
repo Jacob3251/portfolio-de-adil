@@ -1,8 +1,6 @@
 import React from "react";
-import { useState } from "react";
-import Skill from "./Skill";
 import ResponsiveCarousel from "../Shared/ResponsiveCarousel";
-
+import FrontendSkills from "./FrontendSkills/FrontendSkills";
 const Skills = () => {
   return (
     <div className=" w-full px-5 md:px-20  mb-40 mx-auto py-2" id="skills">
@@ -187,7 +185,76 @@ const Skills = () => {
         </div>
       </div> */}
       <ResponsiveCarousel></ResponsiveCarousel>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] mx-auto w-[95%] mt-[80px]">
+      {/* <div className="parent">
+       
+        <div className="row">
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">1</div>
+            </div>
+          </div>
+          <div className="connectingline"></div>
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">2</div>
+            </div>
+          </div>
+          <div className="connectingline"></div>
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">3</div>
+            </div>
+          </div>
+          <div className="connectingline"></div>
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">4</div>
+            </div>
+          </div>
+          <div className="verticalConnection"></div>
+        </div>
+        <div className="row">
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">5</div>
+            </div>
+          </div>
+          <div className="connectingline"></div>
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">6</div>
+            </div>
+          </div>
+          <div className="connectingline"></div>
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">7</div>
+            </div>
+          </div>
+          <div className="connectingline"></div>
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">7</div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="row">
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">6</div>
+            </div>
+          </div>
+          <div className="connectingline"></div>
+          <div className="item">
+            <div className="circle">
+              <div className="innerCircle">7</div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] mx-auto w-[95%] mt-[80px]">
         <Skill name="HTML" skillPoint={85}></Skill>
         <Skill name="CSS" skillPoint={75}></Skill>
         <Skill name="JAVASCRIPT" skillPoint={90}></Skill>
@@ -198,7 +265,7 @@ const Skills = () => {
         <Skill name="TYPESCRIPT" skillPoint={83}></Skill>
         <Skill name="EXPRESS" skillPoint={75}></Skill>
         <Skill name="MONGODB" skillPoint={98}></Skill>
-      </div>
+      </div> */}
     </div>
   );
 };

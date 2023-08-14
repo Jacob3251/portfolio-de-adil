@@ -17,8 +17,8 @@ const Layout = () => {
       <Header></Header>
       <div className="w-full  md:w-[90%] lg:w-[85%]  mx-auto">
         <Home className=""></Home>
-        <Services className=""></Services>
         <Skills className=""></Skills>
+        <Services className=""></Services>
         <Works className=""></Works>
       </div>
 

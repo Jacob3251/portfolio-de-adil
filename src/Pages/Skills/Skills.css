@@ -1,0 +1,107 @@
+/* .parent {
+  background-color: red;
+  position: relative;
+}
+.row {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.connectingline {
+  width: 50px;
+  height: 5px;
+  background-color: blue;
+}
+.verticalConnection {
+  position: absolute;
+  width: 26px;
+  height: 5px;
+  right: 20%;
+  top: 31%;
+  transform: rotate(90deg);
+  background-color: blue;
+}
+.circle {
+  padding: 5px;
+  background-color: blue;
+  border-radius: 100%;
+}
+.innerCircle {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background-color: green;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .connectingline {
+    margin: 20px 0px;
+    transform: rotate(90deg);
+  }
+}
+
+ */
+.container {
+  display: flex;
+  justify-content: center;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  position: relative;
+}
+.item:nth-child(1) {
+  position: relative;
+  top: 50%;
+  left: 25%;
+}
+.item:nth-child(3) {
+  position: relative;
+  top: 50%;
+  right: 25%;
+}
+.item:nth-child(4) {
+  position: relative;
+  top: 50%;
+  left: 25%;
+}
+.item:nth-child(5) {
+  position: relative;
+  top: -5%;
+}
+.item:nth-child(6) {
+  position: relative;
+  top: 50%;
+  right: 25%;
+}
+.item:nth-child(7) {
+  position: relative;
+  left: 100%;
+  bottom: 10.4%;
+}
+
+.item {
+  width: 130px;
+  height: 116px;
+  margin: 10px;
+  background-color: #1a1c2c;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
