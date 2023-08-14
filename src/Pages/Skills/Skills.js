@@ -1,20 +1,48 @@
 import React from "react";
 import ResponsiveCarousel from "../Shared/ResponsiveCarousel";
-import FrontendSkills from "./FrontendSkills/FrontendSkills";
 const Skills = () => {
   return (
-    <div className=" w-full px-5 md:px-20  mb-40 mx-auto py-2" id="skills">
+    <div
+      className="w-full my-0 md:my-[350px] px-5 md:px-20  mb-40 mx-auto py-2"
+      id="skills"
+    >
+      <div className="flex md:flex-row flex-col w-full  rounded-lg">
+        <div className="flex flex-col  font-roboto justify-center items-center  md:w-[50%]">
+          <h6 className="text-white font-bold font-roboto text-3xl ">
+            &lt; MY SKILLS / &gt;
+          </h6>
+          <p className="text-md my-5 px-14 hidden md:block">
+            I'm proud to share my proficiency in the MERN (MongoDB, Express.js,
+            React, Node.js) stack, a powerful toolkit for crafting modern web
+            applications. I've dived deep into MongoDB, mastering the art of
+            creating efficient and expandable databases. With Express.js, I've
+            honed my ability to construct smooth pathways for data to flow
+            between the frontend and backend, ensuring a seamless user
+            experience. Through React, I've become skilled at building
+            eye-catching interfaces that are not only visually appealing but
+            also user-friendly. Thanks to Node.js, I've gained the capability to
+            build fast and scalable network applications, contributing to the
+            overall speed and performance of the stack. Bringing these
+            technologies together, I'm well-prepared to take on diverse projects
+            in web development, from idea to deployment, and create solutions
+            that truly stand out.
+          </p>
+        </div>
+        <div className="md:w-[50%] md:mx-auto">
+          <ResponsiveCarousel></ResponsiveCarousel>
+        </div>
+      </div>
       {/* <h3 className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white">
         PROFESSIONAL SKILLS
       </h3> */}
-      <div className="flex items-center justify-center my-5  space-x-4">
-        {/* <h6 className=" text-lg text-white"></h6> */}
+      {/* <div className="flex items-center justify-center my-5  space-x-4">
+        
         <h6 className="text-white font-bold font-roboto text-3xl ">
           &lt; MY SKILLS / &gt;
         </h6>
-        {/* <hr className="divider text-white bg-white" /> */}
-      </div>
-      <div className="flex w-full justify-center items-center">
+      
+      </div> */}
+      {/* <div className="flex w-full justify-center items-center">
         <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
         <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
@@ -27,7 +55,7 @@ const Skills = () => {
         <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         <span className="mx-2"></span>
         <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
-      </div>
+      </div> */}
       {/* Progress bar below */}
       {/* <div className="mb-20  w-full">
         <div className="mt-[100px] space-y-5">
@@ -184,7 +212,7 @@ const Skills = () => {
           </div>
         </div>
       </div> */}
-      <ResponsiveCarousel></ResponsiveCarousel>
+
       {/* <div className="parent">
        
         <div className="row">
