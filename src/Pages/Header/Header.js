@@ -7,6 +7,7 @@ const Header = () => {
   const [showSecond, setShowSecond] = useState(false);
 
   return (
+    // sticky
     <div className="sticky top-[-2px] z-50">
       <nav className=" bg-[#1a1c2c] ">
         <div className="flex w-[90%] py-5 lg:py-0 mx-auto justify-between items-center ">

@@ -3,12 +3,7 @@ import React from "react";
 const Service = ({ description, category, jobTitle }) => {
   return (
     // bg-[#303241]
-    <div
-      className="bg-[#1a1c2c] hover:bg-[#6c1ec49b] duration-300 p-5 rounded-md drop-shadow-lg"
-      data-aos="fade-up"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="1000"
-    >
+    <div className="bg-[#1a1c2c] hover:bg-[#6c1ec49b] duration-300 p-5 rounded-md drop-shadow-lg">
       <h6 className="mb-10 font-roboto font-semibold text-[#ee874fd4] text-xs">
         {category}
       </h6>

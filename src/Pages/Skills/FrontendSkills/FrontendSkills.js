@@ -39,12 +39,12 @@ const FrontendSkills = () => {
         </div>
         <div className="item">
           <div>
-            <FaAdn></FaAdn>
+            <h3 className="text-[16px] font-roboto">DaisyUI</h3>
           </div>
         </div>
         <div className="item">
           <div>
-            <FaAdn></FaAdn>
+            <h3 className="text-[16px] font-roboto">TailwindCSS</h3>
           </div>
         </div>
       </div>

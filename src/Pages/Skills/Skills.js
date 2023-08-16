@@ -2,30 +2,19 @@ import React from "react";
 import ResponsiveCarousel from "../Shared/ResponsiveCarousel";
 const Skills = () => {
   return (
-    <div
-      className="w-full my-0 md:my-[350px] px-5 md:px-20  mb-40 mx-auto py-2"
-      id="skills"
-    >
+    <div className="w-full my-0 px-5 md:px-20  mb-40 mx-auto py-2">
       <div className="flex md:flex-row flex-col w-full  rounded-lg">
         <div className="flex flex-col  font-roboto justify-center items-center  md:w-[50%]">
           <h6 className="text-white font-bold font-roboto text-3xl ">
             &lt; MY SKILLS / &gt;
           </h6>
           <p className="text-md my-5 px-14 hidden md:block">
-            I'm proud to share my proficiency in the MERN (MongoDB, Express.js,
-            React, Node.js) stack, a powerful toolkit for crafting modern web
-            applications. I've dived deep into MongoDB, mastering the art of
-            creating efficient and expandable databases. With Express.js, I've
-            honed my ability to construct smooth pathways for data to flow
-            between the frontend and backend, ensuring a seamless user
-            experience. Through React, I've become skilled at building
-            eye-catching interfaces that are not only visually appealing but
-            also user-friendly. Thanks to Node.js, I've gained the capability to
-            build fast and scalable network applications, contributing to the
-            overall speed and performance of the stack. Bringing these
-            technologies together, I'm well-prepared to take on diverse projects
-            in web development, from idea to deployment, and create solutions
-            that truly stand out.
+            Adept with the MERN stack (MongoDB, Express, React, and Node.js).
+            Create effective contemporary web applications. proficient with
+            MongoDB for open-source databases. Smooth data flow and improved
+            user experiences are provided by Express.js. React-based, appealing
+            user interfaces; Swift-based, scalable network programs; Node.js for
+            superior stack performance. provides excellent web solutions.
           </p>
         </div>
         <div className="md:w-[50%] md:mx-auto">

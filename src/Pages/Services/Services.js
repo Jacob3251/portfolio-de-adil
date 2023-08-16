@@ -3,14 +3,8 @@ import Service from "./Service";
 
 const Services = () => {
   return (
-    <div className=" w-full px-5 md:px-20  mb-40 mx-auto py-2" id="services">
+    <div className=" w-full px-5 md:px-20  mb-40 mx-auto py-2">
       <div>
-        {/* <h3
-          // 
-          className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white"
-        >
-          WHAT I DO
-        </h3> */}
         <div className="flex items-center justify-center my-4 space-x-4">
           {/* <h6 className=" text-lg text-white">MY</h6> */}
           <h6 className="text-white font-bold font-roboto text-3xl ">
@@ -48,28 +42,28 @@ const Services = () => {
           ></Service>
           <Service
             category={"WEB DEVELOPMENT"}
-            jobTitle={"Error Fixing"}
+            jobTitle={"PSD to MERN Application"}
             description={
-              "Error fixing in web development refers to the process of identifying and resolving errors in the code, configuration, or environment of a website or web application."
+              "I have quite a lot of experience when it comes to converting mockup designs such PSD or XD designs into live websites. Therefore, I can make precise web applications"
+            }
+          ></Service>
+          <Service
+            category={"BACKEND DEVELOPMENT"}
+            jobTitle={"SERVER DESIGN & DEVELOPMENT"}
+            description={
+              "I'll use nodejs, one of the most popular technologies used for developing servers to make a server to your demand."
+            }
+          ></Service>
+          <Service
+            category={"UI/UX DEVELOPMENT"}
+            jobTitle={"CUSTOM THEME DESIGN & DEVELOPMENT"}
+            description={
+              "You need a theme for your web application. I will use figma to design it to your liking."
             }
           ></Service>
           <Service
             category={"WEB DEVELOPMENT"}
-            jobTitle={"Error Fixing"}
-            description={
-              "Error fixing in web development refers to the process of identifying and resolving errors in the code, configuration, or environment of a website or web application."
-            }
-          ></Service>
-          <Service
-            category={"WEB DEVELOPMENT"}
-            jobTitle={"Error Fixing"}
-            description={
-              "Error fixing in web development refers to the process of identifying and resolving errors in the code, configuration, or environment of a website or web application."
-            }
-          ></Service>
-          <Service
-            category={"WEB DEVELOPMENT"}
-            jobTitle={"Error Fixing"}
+            jobTitle={"Error DEBUGGING"}
             description={
               "Error fixing in web development refers to the process of identifying and resolving errors in the code, configuration, or environment of a website or web application."
             }

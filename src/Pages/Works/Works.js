@@ -64,10 +64,7 @@ const Works = () => {
   ];
 
   return (
-    <div className="w-full px-5 md:px-20 " data-aos="fade-up" id="works">
-      {/* <h3 className="text-center font-extrabold text-4xl mt-5 mb-2 font-raleway  text-white">
-        PORTFOLIO
-      </h3> */}
+    <div className="w-full px-5 md:px-20 " data-aos="fade-up">
       <div className="flex items-center justify-center my-3  space-x-4">
         {/* <h6 className=" text-lg text-white">MY</h6> */}
         <h6 className="text-white font-bold font-roboto text-3xl ">
@@ -96,9 +93,10 @@ const Works = () => {
           </Typist>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] my-10">
-          {works.map((work) => (
+        <div className="grid grid-cols-1 gap-[50px] my-10">
+          {works.map((work, index) => (
             <Work
+              index={index + 1}
               id={work.id}
               key={work.id}
               title={work.title}
