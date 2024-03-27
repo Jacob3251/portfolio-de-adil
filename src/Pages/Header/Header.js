@@ -58,7 +58,8 @@ const Header = () => {
               </li>
 
               <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
-                <Link to="blogs">Blogs</Link>
+                {/* <Link to="blogs">Blogs</Link> */}
+                Blogs
               </li>
               <li className="duration-200 rounded-md hover:bg-purple-700  px-3 py-2 text-xl font-semibold text-purple-700 hover:text-white font-roboto">
                 <HashLink smooth to="/#contact">
@@ -103,7 +104,8 @@ const Header = () => {
             </li>
 
             <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
-              <Link to="blogs">Blogs</Link>
+              {/* <Link to="blogs">Blogs</Link> */}
+              Blogs
             </li>
             <li className="duration-200 rounded-md hover:bg-[#5a7d9a]  px-3 py-2 text-xl font-semibold text-white font-raleway">
               <HashLink smooth to="/#contact">

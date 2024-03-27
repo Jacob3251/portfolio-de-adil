@@ -6,6 +6,7 @@ import Skills from "../Skills/Skills";
 import Works from "../Works/Works";
 import Footer from "../Footer/Footer";
 import Contact from "../Contact/Contact";
+import InProgress from "../Shared/InProgress";
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
       {/* <div className="hidden">
         <ParticleBackground></ParticleBackground>
       </div> */}
+      <InProgress></InProgress>
       <Header></Header>
       <div className="w-full  max-w-[1440px] mx-auto ">
         <div id="home" className="h-[80px] "></div>
