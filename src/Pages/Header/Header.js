@@ -8,8 +8,8 @@ const Header = () => {
 
   return (
     // sticky
-    <div className="sticky top-[-2px] z-50">
-      <nav className=" bg-[#1a1c2c] ">
+    <div className="bg-[#1a1c2c] sticky top-[-2px] z-50">
+      <nav className="  w-full mx-auto max-w-[1440px]">
         <div className="flex w-[90%] py-5 lg:py-0 mx-auto justify-between items-center ">
           <div>
             <h3 className="text-purple-700   text-3xl font-wetpaint font-normal tracking-widest">

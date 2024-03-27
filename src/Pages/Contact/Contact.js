@@ -47,8 +47,8 @@ const Contact = () => {
       </div>
 
       {/* MAIN CONTACT COMPONENT */}
-      <div className="flex flex-col md:flex-row my-8 md:my-16 justify-center items-center">
-        <div className="w-[50%] flex flex-col justify-center items-center text-white">
+      <div className="flex flex-col-reverse md:flex-row my-8 md:my-16 justify-start items-start  md:space-x-[50px]">
+        <div className="mt-[50px] lg:mt-0 w-full lg:w-[50%] flex flex-col justify-start items-start text-white ">
           <div>
             <h3 className="text-[24px] font-roboto font-semibold tracking-wider mb-2">
               Don't hesitate, let me know
@@ -72,7 +72,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-[50%]">
+        <div className="w-full lg:w-[50%]">
           <form
             className=" w-full flex flex-col space-y-5"
             ref={form}
@@ -99,7 +99,7 @@ const Contact = () => {
             />
             <input
               type="submit"
-              className="py-2 w-[22%] drop-shadow-md px-5 duration-300 translate-y-0 hover:translate-y-[-3px] brightness-95 hover:brightness-110 rounded-md font-roboto text-[14px] bg-purple-800 text-white font-semibold tracking-wider"
+              className="py-2 w-full  drop-shadow-md px-5 duration-300 translate-y-0 hover:translate-y-[-3px] brightness-95 hover:brightness-110 rounded-md font-roboto text-[14px] bg-purple-800 text-white font-semibold tracking-wider"
               value="Send"
             />
           </form>

@@ -14,7 +14,7 @@ const Layout = () => {
         <ParticleBackground></ParticleBackground>
       </div> */}
       <Header></Header>
-      <div className="w-full  md:w-[90%] lg:w-[85%]  mx-auto">
+      <div className="w-full  max-w-[1440px] mx-auto ">
         <div id="home" className="h-[80px] "></div>
         <Home className=""></Home>
         <div id="skills" className="h-[80px] "></div>
