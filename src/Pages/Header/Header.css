@@ -8,6 +8,7 @@
 .expandable {
   min-height: 0;
   color: white;
+  /* display: none;  */
 }
 .wrapper {
   display: grid;
@@ -20,17 +21,16 @@
 .wrapper.open {
   grid-template-rows: 1fr;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1200px) {
   .menuBar {
     display: none;
   }
-
   .sideMenuIcon {
     display: block;
   }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media only screen and (min-width: 577px) and (max-width: 1200px) {
   .menuBar {
     display: none;
   }

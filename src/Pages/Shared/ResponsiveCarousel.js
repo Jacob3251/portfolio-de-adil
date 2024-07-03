@@ -15,22 +15,28 @@ function ResponsiveCarousel() {
   return (
     <div>
       <div className="my-5">
-        <ul className="flex justify-center space-x-5">
+        <ul className="flex justify-center space-x-5 ">
           <li
             onClick={() => handleActiveTab(0)}
-            className={`tab ${act === 0 && "active"}`}
+            className={`tab text-white font-bold tracking-widest text-[16px] ${
+              act === 0 && "active"
+            }`}
           >
             FRONTEND
           </li>
           <li
             onClick={() => handleActiveTab(1)}
-            className={`tab ${act === 1 && "active"}`}
+            className={`tab text-white font-bold tracking-widest text-[16px] ${
+              act === 1 && "active"
+            }`}
           >
             BACKEND
           </li>
           <li
             onClick={() => handleActiveTab(2)}
-            className={`tab ${act === 2 && "active"}`}
+            className={`tab text-white font-bold tracking-widest text-[16px] ${
+              act === 2 && "active"
+            }`}
           >
             TOOLS
           </li>

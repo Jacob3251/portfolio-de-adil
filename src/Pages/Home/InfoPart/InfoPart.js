@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
+import useDownloader from "react-use-downloader";
 import {
   FaFacebookF,
   FaGithub,
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
+import cv from "../../../assets/cv.pdf";
 import { FiMail } from "react-icons/fi";
 import { HashLink } from "react-router-hash-link";
 import { Typewriter } from "react-simple-typewriter";
 const InfoPart = ({ classes }) => {
   const [count, setCount] = useState(1);
   const [currentText, setCurrentText] = useState("Web Developer");
+  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
+    useDownloader();
 
   useEffect(() => {
     setCount(1);
@@ -54,20 +58,6 @@ const InfoPart = ({ classes }) => {
                 "An Enthusiast",
               ]}
             />
-            {/* <Typist
-              cursor={{
-                element: "",
-                hideWhenDone: true,
-              }}
-              avgTypingDelay={50}
-              onTypingDone={handleTypingDone}
-            >
-              <span className="font-roboto text-xl text-purple-700">
-                {currentText}
-              </span>
-              <Typist.Delay ms={800} />
-              <Typist.Backspace count={20} ms={800} />
-            </Typist> */}
           </div>
         ) : (
           <p></p>
@@ -75,19 +65,50 @@ const InfoPart = ({ classes }) => {
       </div>
 
       <p className="text-white mb-2 md:mb-10">
-        I am from Bangladesh a country located in South-East Asia. I have good
-        understanding in web design, also I have some knowledge about backend
-        thats required for building a nice websites
+        Hello! As a MERN stack developer, creating dynamic and responsive web
+        apps is something I'm really passionate about. Having earned my
+        bachelor's degree in computer science and engineering with a 3.78 CGPA
+        from Leading University in Sylhet, I have a strong foundation in these
+        fields. I'm from Bangladesh, and I speak Bengali and English well. My
+        passion to learn and leverage new technologies to build seamless user
+        experiences has motivated my technological journey.
       </p>
       <div className="flex justify-center md:space-x-5 text-lg text-white  md:justify-start py-2">
-        <FaFacebookF className="hover:bg-purple-700 hover:text-white rounded-full h-8 p-1 w-8 duration-200"></FaFacebookF>
-        <FaGithub className="hover:bg-purple-700 hover:text-white rounded-full h-8 p-1 w-8 duration-200"></FaGithub>
-        <FaLinkedinIn className="hover:bg-purple-700 hover:text-white rounded-full h-8 p-1 w-8 duration-200"></FaLinkedinIn>
-        <FaWhatsapp className="hover:bg-purple-700 hover:text-white rounded-full h-8 p-1 w-8 duration-200"></FaWhatsapp>
-        <FiMail className="hover:bg-purple-700 hover:text-white rounded-full h-8 p-1 w-8 duration-200"></FiMail>
+        <a
+          href="https://www.facebook.com/nayeem.hasan.982"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaFacebookF className="hover:bg-purple-700 hover:text-white rounded-full h-12 p-1.5 w-12   duration-200"></FaFacebookF>
+        </a>
+        <a href="https://github.com/Jacob3251" target="_blank" rel="noreferrer">
+          <FaGithub className="hover:bg-purple-700 hover:text-white rounded-full h-12 p-1.5 w-12   duration-200"></FaGithub>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/md-nayeem-hasan-adil/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaLinkedinIn className="hover:bg-purple-700 hover:text-white rounded-full h-12 p-1.5 w-12   duration-200"></FaLinkedinIn>
+        </a>
+        <a href="tel:+8801754974851">
+          <FaWhatsapp className="hover:bg-purple-700 hover:text-white rounded-full h-12 p-1.5 w-12   duration-200"></FaWhatsapp>
+        </a>
+
+        <a
+          href="mailto:jacobfrye3251@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FiMail className="hover:bg-purple-700 hover:text-white rounded-full h-12 p-1.5 w-12  duration-200"></FiMail>
+        </a>
       </div>
       <div className="flex space-x-1 justify-center md:justify-start mt-5 mb-10">
-        <button className="bg-purple-700 hover:bg-opacity-70 duration-200 px-10 py-2 font-roboto text-white shadow-sm hover:shadow-md shadow-black text-xl font-bold   rounded-tl-xl rounded-bl-xl">
+        <button
+          onClick={() => download(cv, "Md Nayeem Hasan Adil CV.pdf")}
+          className="bg-purple-700 hover:bg-opacity-70 duration-200 px-10 py-2 font-roboto text-white shadow-sm hover:shadow-md shadow-black text-xl font-bold   rounded-tl-xl rounded-bl-xl"
+        >
           Download CV
         </button>
         <HashLink

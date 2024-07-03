@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { MdEmail, MdLocationOn, MdPhoneInTalk } from "react-icons/md";
+import toast from "react-hot-toast";
 const Contact = () => {
   const form = useRef();
 
@@ -16,10 +17,13 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert(typeof result.status);
+          // console.log(result);
+          toast.success("Query Submitted!!");
+          e.target.reset();
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
+          toast.error("Query Submission Error!!");
         }
       );
   };

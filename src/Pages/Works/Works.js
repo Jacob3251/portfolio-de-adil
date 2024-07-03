@@ -2,64 +2,77 @@ import React, { useEffect, useState } from "react";
 import Work from "./Work";
 import Typist from "react-typist";
 import Carousel from "../Shared/Carousel";
+import img1 from "../../assets/images/Aviate-Abroad-Home.png";
+import img2 from "../../assets/images/Tuscany-Tours.png";
+import img3 from "../../assets/images/CGSC.png";
+import img4 from "../../assets/images/Difny.png";
+import img5 from "../../assets/images/rightway.png";
+import img6 from "../../assets/images/Vintage-International.png";
 const Works = () => {
   const [showTyper, setShowTyper] = useState(true);
   const works = [
     {
       id: 1,
       category: "WEB DEVELOPMENT",
-      title: "Full Stack Website",
+      title: "Aviate Abroad",
+      imgLink: img1,
+      tags: "React, React Router, Context API, Tailwind CSS, Axios, Prisma, PostgreSQL, Nodejs, JWT etc ",
+      gitLink: "https://github.com/Jacob3251/aviatero",
+      liveLink: "https://aviategloballtd.co.uk/",
       desciption:
-        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+        "A consultancy firm website featuring roles and permissions, node authentication with jwt verification and a fully functional dashboard where the user's can do CRUD operations on clients, leads; Send emails and newsletters; Manage the frontend site content from the backend.",
     },
     {
       id: 2,
       category: "WEB DEVELOPMENT",
-      title: "Full Stack Website",
+      title: "Tours to Tuscany",
+      imgLink: img2,
+      tags: "React, React Router, Context API, Tailwind CSS, SwiperJS, Axios, Auth0",
+      gitLink: "https://github.com/Jacob3251/trendy-Blogger-Client-Side",
+      liveLink: "https://tuscany-tours.netlify.app/",
       desciption:
-        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+        "A Travel Website Frontend demo design implementation featuring AUTH0 authentication for login. This site has multiple routes featuring multiple sliders, banners, forms etc.",
     },
     {
       id: 3,
       category: "WEB DEVELOPMENT",
-      title: "Full Stack Website",
-      desciption:
-        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+      title: "CGSC",
+      imgLink: img3,
+      tags: "React, React Router, Tailwind CSS, SwiperJS",
+      gitLink: "https://github.com/Jacob3251/School-Frontend-Demo",
+      liveLink: "https://cheerful-custard-school.netlify.app/",
+      desciption: "A school website frontend design implementation.",
     },
     {
-      id: 3,
+      id: 4,
       category: "WEB DEVELOPMENT",
-      title: "Full Stack Website",
+      title: "Difny",
+      imgLink: img4,
+      tags: "React, React Router, Context API, Tailwind CSS, Axios, Firebase",
+      gitLink: "https://github.com/Jacob3251/trendy-Blogger-Client-Side",
+      liveLink: "https://tiny-kringle-865f33.netlify.app/",
       desciption:
-        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+        "A single page website featuring pixel perfact responsive social site feed page",
     },
     {
-      id: 3,
+      id: 5,
       category: "WEB DEVELOPMENT",
-      title: "Full Stack Website",
-      desciption:
-        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+      title: "Rightway",
+      imgLink: img5,
+      tags: "React, React Router, Context API, Tailwind CSS, etc",
+      gitLink: "https://github.com/Jacob3251/rightway",
+      liveLink: "https://rightway-mockup.netlify.app/",
+      desciption: "A responsive frontend design for a consultancy firm",
     },
     {
-      id: 3,
+      id: 6,
       category: "WEB DEVELOPMENT",
-      title: "Full Stack Website",
-      desciption:
-        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
-    },
-    {
-      id: 3,
-      category: "WEB DEVELOPMENT",
-      title: "Full Stack Website",
-      desciption:
-        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
-    },
-    {
-      id: 3,
-      category: "WEB DEVELOPMENT",
-      title: "Full Stack Website",
-      desciption:
-        "Loremfasd lkdasjflak jfldask jldkfl aksjflka jlfd lkfjla sdkfdl klaf lfl kalfk sdlfs dajlf jllk asldkf jlkfk",
+      title: "Vintage International",
+      imgLink: img6,
+      tags: "HTML, CSS, JS, Owl Carousel",
+      gitLink: "https://github.com/Lilliput-Digital/Vintage-International",
+      liveLink: "https://vintage-international.netlify.app/",
+      desciption: "A SPA website for a consultancy made with Vanila JS.",
     },
   ];
 
@@ -99,9 +112,13 @@ const Works = () => {
               index={index + 1}
               id={work.id}
               key={work.id}
+              imgLink={work.imgLink}
               title={work.title}
               category={work.category}
+              tags={work.tags}
               desciption={work.desciption}
+              gitLink={work.gitLink}
+              liveLink={work.liveLink}
             ></Work>
           ))}
         </div>

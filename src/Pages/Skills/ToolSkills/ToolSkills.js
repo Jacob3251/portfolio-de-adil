@@ -1,43 +1,47 @@
 import React from "react";
 import "./ToolSkills.css";
-import { FaAdn } from "react-icons/fa";
+import { FaAdn, FaGithub, FaTrello } from "react-icons/fa";
+import { SiXampp } from "react-icons/si";
+import { TbBrandVscode } from "react-icons/tb";
+import { GoGitMerge } from "react-icons/go";
+import { BiLogoNetlify, BiLogoPostgresql } from "react-icons/bi";
 const ToolSkills = () => {
   return (
     <div className="container">
       <div className="parent">
         <div className="item3">
-          <div>
-            <FaAdn></FaAdn>
+          <div className="">
+            <SiXampp />
           </div>
         </div>
         <div className="item3">
           <div>
-            <FaAdn></FaAdn>
+            <TbBrandVscode />
           </div>
         </div>
         <div className="item3">
           <div>
-            <FaAdn></FaAdn>
+            <FaTrello />
           </div>
         </div>
         <div className="item3">
           <div>
-            <FaAdn></FaAdn>
+            <FaGithub />
           </div>
         </div>
         <div className="item3">
           <div>
-            <FaAdn></FaAdn>
+            <GoGitMerge />
           </div>
         </div>
         <div className="item3">
           <div>
-            <FaAdn></FaAdn>
+            <BiLogoNetlify />
           </div>
         </div>
         <div className="item3">
           <div>
-            <FaAdn></FaAdn>
+            <BiLogoPostgresql />
           </div>
         </div>
       </div>

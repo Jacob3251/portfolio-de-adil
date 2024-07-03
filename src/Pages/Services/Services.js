@@ -25,7 +25,7 @@ const Services = () => {
           <span className="mx-2"></span>
           <div className=" my-1 bg-white w-full" style={{ height: "2px" }} />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] my-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px] md:gap-[50px] my-10">
           <Service
             category={"FRONTEND REACT DEVELOPMENT"}
             jobTitle={"Single Page Application"}
@@ -42,9 +42,9 @@ const Services = () => {
           ></Service>
           <Service
             category={"WEB DEVELOPMENT"}
-            jobTitle={"PSD to MERN Application"}
+            jobTitle={"Figma to Website"}
             description={
-              "I have quite a lot of experience when it comes to converting mockup designs such PSD or XD designs into live websites. Therefore, I can make precise web applications"
+              "I have quite a lot of experience when it comes to converting mockup designs such Figma or PSD or XD designs into live websites. Therefore, I can make precise web applications"
             }
           ></Service>
           <Service

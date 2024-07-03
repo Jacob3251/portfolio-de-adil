@@ -62,5 +62,6 @@
 
 .item3:hover {
   transform: scale(1.1);
-  filter: brightness(140%);
+  background-color: #7e22ce;
+  filter: brightness(110%);
 }
